@@ -11,7 +11,7 @@ function start() {
       console.log('Updated: %s', stdout);
     });
   });
-  server.listen(() => {
+  server.listen(80, () => {
     console.log('Server listening');
   });
 }
