@@ -2,7 +2,7 @@
   "name": "integration-demo",
   "version": "0.0.1",
   "description": "An integration demo",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
     "test": "node test.js"
   },
