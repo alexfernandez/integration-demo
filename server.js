@@ -1,7 +1,7 @@
 'use strict';
 
 const http = require('http');
-const exec = require('child_process')
+const {exec} = require('child_process')
 
 function start() {
   const server = http.createServer((request, response) => {
