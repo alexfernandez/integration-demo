@@ -7,8 +7,13 @@ function start() {
   const server = http.createServer((request, response) => {
     console.log('Received request for %s', request.url)
     exec('cd ~/test/ && git pull && npm test', (error, stdout) => {
-      if (error) return console.error('Could not update: %s', error);
+      if (error) {
+        console.error('Could not update: %s', error);
+        response.writeHead(500, 'Not updated: ' + error);
+        return
+      }
       console.log('Updated: %s', stdout);
+      response.end('Updated: ' + stdout);
     });
   });
   server.listen(8000, () => {
