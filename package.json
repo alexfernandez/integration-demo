@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/alexfernandez/integration-demo/issues"
   },
-  "homepage": "https://github.com/alexfernandez/integration-demo#readme"
+  "homepage": "https://github.com/alexfernandez/integration-demo#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.145.0",
+    "ssh2": "^0.5.5"
+  }
 }
